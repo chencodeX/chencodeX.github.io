@@ -2,20 +2,23 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>陈子豪的简历</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
 @media screen and (max-width: 500px) { 
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
@@ -24,14 +27,14 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
-img { max-width: 100%; vertical-align: middle; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
 button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
 p { line-height: inherit; }
-h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
 p { orphans: 4; }
 h1 { font-size: 2rem; }
 h2 { font-size: 1.8rem; }
@@ -43,11 +46,11 @@ h6 { font-size: 1rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
-figure > table { margin: 0px !important; }
+figure > table { margin: 0px; }
 tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
@@ -64,7 +67,7 @@ div.hr:focus { cursor: none; }
 #write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
 .md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
-.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 #write .md-fences.mock-cm { white-space: pre-wrap; }
 .md-fences.md-fences-with-lineno { padding-left: 0px; }
 #write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
@@ -76,27 +79,31 @@ div.hr:focus { cursor: none; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
 li { margin: 0px; position: relative; }
 blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print { 
-  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
-  html.blink-to-pdf { font-size: 13px; }
-  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
 pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
 p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
 p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .md-math-block { width: 100%; }
 .md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
@@ -132,11 +139,12 @@ code { text-align: left; }
 a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
 .md-inline-math .MathJax_SVG .noError { display: none !important; }
 .html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
-.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.md-fences-math .MathJax_SVG_Display, .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: visible; display: block !important; }
 .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
 .MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
 .MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; zoom: 90%; }
+#math-inline-preview-content { zoom: 1.1; }
 .MathJax_SVG * { transition: none; }
 .MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
@@ -147,10 +155,61 @@ table tr th { border-bottom-width: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
-svg[id^="mermaidChart"] { line-height: 1em; }
 mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
-mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-require-zoom-fix foreignObject { font-size: var(--mermaid-font-zoom); }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-math .MathJax_SVG_Display { margin-top: 8px; cursor: default; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) { 
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) { 
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ''; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ''; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ''; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: '−'; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
 
 
 :root {
@@ -160,12 +219,16 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 
 @include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
 
-html {
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
     font-size: 16px;
 }
 
 body {
-    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
 }
@@ -176,6 +239,19 @@ body {
   	padding: 30px;
     padding-bottom: 100px;
 }
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
 #write > ul:first-child,
 #write > ol:first-child{
     margin-top: 30px;
@@ -230,17 +306,33 @@ h6 code {
     font-size: inherit;
 }
 h1 {
-    padding-bottom: .3em;
     font-size: 2.25em;
     line-height: 1.2;
     border-bottom: 1px solid #eee;
 }
 h2 {
-   padding-bottom: .3em;
     font-size: 1.75em;
     line-height: 1.225;
     border-bottom: 1px solid #eee;
 }
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
 h3 {
     font-size: 1.5em;
     line-height: 1.43;
@@ -305,7 +397,7 @@ table {
     word-break: initial;
 }
 table tr {
-    border-top: 1px solid #dfe2e5;
+    border: 1px solid #dfe2e5;
     margin: 0;
     padding: 0;
 }
@@ -313,24 +405,24 @@ table tr:nth-child(2n),
 thead {
     background-color: #f8f8f8;
 }
-table tr th {
+table th {
     font-weight: bold;
     border: 1px solid #dfe2e5;
     border-bottom: 0;
     margin: 0;
     padding: 6px 13px;
 }
-table tr td {
+table td {
     border: 1px solid #dfe2e5;
     margin: 0;
     padding: 6px 13px;
 }
-table tr th:first-child,
-table tr td:first-child {
+table th:first-child,
+table td:first-child {
     margin-top: 0;
 }
-table tr th:last-child,
-table tr td:last-child {
+table th:last-child,
+table td:last-child {
     margin-bottom: 0;
 }
 
@@ -479,9 +571,9 @@ header, .context-menu, .megamenu-content, footer{
     color: #b4654d;
 }
 
-.html-for-mac .context-menu {
+/*.html-for-mac {
     --item-hover-bg-color: #E6F0FE;
-}
+}*/
 
 #md-notification .btn {
     border: 0;
@@ -489,6 +581,7 @@ header, .context-menu, .megamenu-content, footer{
 
 .dropdown-menu .divider {
     border-color: #e5e5e5;
+    opacity: 0.4;
 }
 
 .ty-preferences .window-content {
@@ -500,10 +593,33 @@ header, .context-menu, .megamenu-content, footer{
     background: #999;
 }
 
- .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
-</style>
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+ :root {--mermaid-font-zoom:1em ;}  @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title></title>
 </head>
-<body class='typora-export' >
-<div  id='write'  class = 'is-mac'><h1><a name="陈子豪的简历" class="md-header-anchor"></a><span>陈子豪的简历</span></h1><h3><a name="陈子豪-·-算法工程师" class="md-header-anchor"></a><span>陈子豪 · 算法工程师</span></h3><p><span>3年工作经验|本科|25岁|男|</span><a href='mailto:cs1994726@outlook.com' target='_blank' class='url'>cs1994726@outlook.com</a><span>|18501995729</span></p><h3><a name="工作经历" class="md-header-anchor"></a><span>工作经历</span></h3><p><span>2017.07-至今 </span><br/><strong><span>北京墨迹风云科技股份有限公司</span></strong></p><p><span>职位：算法工程师</span></p><ul><li><span>使用各种算法提升短时降水预报和空气质量预报的准确率</span></li><li><span>为客户端提供各种有趣实用的算法产品，比如观云识天、灾害识别、过敏预报等</span></li><li><span>参与到一部分气象数据分析工作和气象业务化工作</span></li></ul><h3><a name="教育经历" class="md-header-anchor"></a><span>教育经历</span></h3><p><span>2013-2017 </span><br/><strong><span>郑州大学 </span></strong><span></span><br/><span>计算机科学与技术 / 本科       </span></p><h3><a name="项目经历" class="md-header-anchor"></a><span>项目经历</span></h3><p><strong><span>短时预报 </span></strong><span> 主要负责</span><br/><strong><span>短时预报</span></strong><span> 从 16 年到 20 年已经被认为是最有关 meteo , AI 的研究与应用方向。这个方向使用了 气象雷达 进行降水因子观测，对观测到的雷达回波使用基于深度学习的 图像语义分割 技术进行雷达回波去噪，对去噪后的雷达回波基于 循环神经网络 技术进行外推（预报）。呈现给用户一个分钟级，百米级的未来两小时降水预报产品。  </span></p><ul><li><span>基于全卷积神经网络的雷达回波数据去噪算法，主要使用了FCN、deeplab、Unet等网络。</span></li><li><span>基于RNN的雷达时序数据预测算法，主要使用了ConvLSTM、</span><a href='https://github.com/chencodeX/RNN_Pytorch'><span>ConvGRU</span></a><span>等网络结构。</span></li><li><span>基于GPU的快速降水推送算法，主要使用了pytorch、kafka等技术框架。  </span></li></ul><p><strong><em><span>预报效果</span></em></strong><span>  目前对雷达噪声的识别准确率保持在95%以上，外推 (预报) 一小时准确率TS评分均值为51%。   </span></p><hr /><p><strong><span>观云识天及灾害天气识别 </span></strong><span> 主要负责 </span><br/><span>一种基于UGC数据的再分析工作。它数据来源是墨迹天气的用户实景社区。它是国内最丰富的气象要素强相关社会观测资料库。使用了 图像识别和目标检测 的技术，检测实景中可能包含的天气灾害或者天气过程。</span></p><ul><li><span>观云识天产品可以检测出用户上传的照片中云的位置和云的类别，为用户提供该云类型对应下雨的可能性。</span></li><li><span>灾害天气识别检测用户实时上传的图像中是否有灾害天气的发生。</span></li><li><span>任务本身样本极不均衡，使用了ResNet、</span><a href='https://github.com/chencodeX/Bilinear_CNN_dog_classifi'><span>BCNN</span></a><span>、</span><a href='https://github.com/chencodeX/triplet-loss-pytorch'><span>triplet loss</span></a><span>、多级分类器等技术。</span></li></ul><p><strong><em><span>产品效果</span></em></strong><span>  目前支持四种天气过程和四种灾害类型，平均识别精确率为 91.5% ; 支持13种类型的云图细粒度分类，准确率为85%。</span></p><hr /><p><strong><span>空气质量预报项目</span></strong><span>  参与 </span><br/><span>基于全球数值模式预报数据和空气质量实况数据，为用户提供未来5天的逐小时空气质量预报。  </span></p><ul><li><span>调研空气污染扩散条件，构建算法特征，基于SVR构建回归模型预报空气质量数据。</span></li><li><span>针对站点数据缺失问题，基于GBDT构建回归模型，补充站点数据。</span></li></ul><hr /><p><strong><span>用户反馈</span></strong><span>   参与</span><br/><span>一种重要的 UGC 内容，在方方面面参与到目前气象数据加工和预报环节当中。最初它基于一定的时空范围内的用户反馈数据，通过 贝叶斯推断 的方式为短时提供实时有效高质量的反馈数据。在19年，添加了用户置信度的分级系统，对不同置信度用户按照不同策略进行采纳。它使得用户反馈的采纳率和可靠性都大幅提高。</span></p><h3><a name="自我描述" class="md-header-anchor"></a><span>自我描述</span></h3><p><span>能够使用python解决各种业务化问题，能够使用kafka、</span><a href='https://github.com/chencodeX/XianYun'><span>flask</span></a><span>、rpc等技术构建高效稳定的线上服务。</span><br/><span>熟悉linux系统的使用，熟悉pytorch深度学习框架，有caffe和tensorflow的使用经验。</span><br/><span>了解分类回归等机器学习基本理论，熟悉数据清洗特征工程，有sklearn使用经验。</span><br/><span>了解常用的数字图像处理技术，熟练使用opencv、numpy、pandas等数据处理工具。</span><br/><span>熟悉一些常用的CNN、RNN算法模型，了解图像的识别、语义分割等相关算法。 </span><br/><span>喜欢有挑战的编程工作，对新技术抱有好奇心，动手能力强。 </span><br/><span>优秀的策略游戏玩家。</span><br/><span>GitHub: </span><a href='https://github.com/chencodeX' target='_blank' class='url'>https://github.com/chencodeX</a><span>        </span></p><p>&nbsp;</p><p>&nbsp;</p></div>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='陈子豪的简历'><span>陈子豪的简历</span></h1><h3 id='陈子豪-·-算法工程师'><span>陈子豪 · 算法工程师</span></h3><p><span>4年工作经验|本科|26岁|男|</span><a href='mailto:cs1994726@outlook.com'><span>cs1994726@outlook.com</span></a><span>|18501995729</span></p><h3 id='工作经历'><span>工作经历</span></h3><p><span>2020.09-至今</span>
+<strong><span>北京希瑞亚斯科技有限公司（MOKA招聘）</span></strong></p><p><span>职位：算法工程师</span></p><ul><li><span>使用各种OCR的检测和识别技术提升图片简历内容解析的准确率和速度</span></li><li><span>为通用简历内容解析提供视觉语义上的支持，比如简历内嵌图片语义理解，简历块视觉编码提取等</span></li></ul><p><span>2017.07-2020.09</span>
+<strong><span>北京墨迹风云科技股份有限公司</span></strong></p><p><span>职位：算法工程师</span></p><ul><li><span>使用各种算法提升短时降水预报和空气质量预报的准确率</span></li><li><span>为客户端提供各种有趣实用的算法产品，比如观云识天、灾害识别、过敏预报等</span></li><li><span>参与到一部分气象数据分析工作和气象业务化工作</span></li></ul><h3 id='教育经历'><span>教育经历</span></h3><p><span>2013-2017</span>
+<strong><span>郑州大学</span></strong>
+<span>计算机科学与技术 / 本科</span></p><h3 id='项目经历'><span>项目经历</span></h3><p><strong><span>图片简历OCR</span></strong><span> 主要负责</span>
+<span>从moka开始提供招聘服务开始，对于图片简历，系统内部只能使用第三方的OCR服务来进行处理。考虑到通用OCR服务和我们内部的数据分布一致性很差，所以在19年初，moka的AI部门尝试开始搭建自己的图片简历解析服务，整个服务的算法内核分为两部分，首先对整页简历内容基于 目标检测 技术提取出候选区域，再使用 卷积循环神经网络 对候选区域的文字内容做识别，最终提取出整页图片上的有效信息。</span></p><ul><li><span>基于深度学习的文字区域检测算法，主要使用了CTPN、</span><a href='https://github.com/chencodeX/DB'><span>DBNET</span></a><span>等网络结构。</span></li><li><span>基于CRNN的图片文字识别算法，主要使用了resnet、mobilenet、bidirectional LSTM，CTC Loss等结构。</span></li><li><span>基于libtorch和dynamic RNN等技术，对图片简历解析模型进行加速。</span></li></ul><p><strong><em><span>解析效果</span></em></strong><span> 目前对简历文字块的识别准确率F值从72.9%提升到91.1%，单帧简历识别速度从1000毫秒降低到350。</span></p><hr /><p><strong><span>简历视觉信息提取</span></strong><span> 主要负责</span>
+<span>简历解析过程中，对于图文混排简历，其图片数据可以帮助我们分享整体的简历组织结构。所以我们设计了两种方法来帮助简历解析提供更多的视觉信息。</span></p><ul><li><span>对简历内嵌图片进行分类和识别，主要使用了resnet、RoIAlign等结构。</span></li><li><span>对简历解析已经提取出的区域，提取其视觉信息的编码表示，主要使用了自监督视觉特征学习的技术。</span></li><li><span>基于torchvision的cuda接口，对服务进行加速。</span></li></ul><hr /><p><strong><span>短时预报</span></strong><span> 主要负责</span>
+<strong><span>短时预报</span></strong><span> 从 16 年到 20 年已经被认为是最有关 meteo , AI 的研究与应用方向。这个方向使用了 气象雷达 进行降水因子观测，对观测到的雷达回波使用基于深度学习的 图像语义分割 技术进行雷达回波去噪，对去噪后的雷达回波基于 循环神经网络 技术进行外推（预报）。呈现给用户一个分钟级，百米级的未来两小时降水预报产品。</span></p><ul><li><span>基于全卷积神经网络的雷达回波数据去噪算法，主要使用了FCN、deeplab、Unet等网络。</span></li><li><span>基于RNN的雷达时序数据预测算法，主要使用了ConvLSTM、</span><a href='https://github.com/chencodeX/RNN_Pytorch'><span>ConvGRU</span></a><span>等网络结构。</span></li><li><span>基于GPU的快速降水推送算法，主要使用了pytorch、kafka等技术框架。</span></li></ul><p><strong><em><span>预报效果</span></em></strong><span> 目前对雷达噪声的识别准确率保持在95%以上，外推 (预报) 一小时准确率TS评分均值为51%。</span></p><hr /><p><strong><span>观云识天及灾害天气识别</span></strong><span> 主要负责</span>
+<span>一种基于UGC数据的再分析工作。它数据来源是墨迹天气的用户实景社区。它是国内最丰富的气象要素强相关社会观测资料库。使用了 图像识别和目标检测 的技术，检测实景中可能包含的天气灾害或者天气过程。</span></p><ul><li><span>观云识天产品可以检测出用户上传的照片中云的位置和云的类别，为用户提供该云类型对应下雨的可能性。</span></li><li><span>灾害天气识别检测用户实时上传的图像中是否有灾害天气的发生。</span></li><li><span>任务本身样本极不均衡，使用了ResNet、</span><a href='https://github.com/chencodeX/Bilinear_CNN_dog_classifi'><span>BCNN</span></a><span>、</span><a href='https://github.com/chencodeX/triplet-loss-pytorch'><span>triplet loss</span></a><span>、多级分类器等技术。</span></li></ul><p><strong><em><span>产品效果</span></em></strong><span> 目前支持四种天气过程和四种灾害类型，平均识别精确率为 91.5% ; 支持13种类型的云图细粒度分类，准确率为85%。</span></p><hr /><p><strong><span>空气质量预报项目</span></strong><span> 参与</span>
+<span>基于全球数值模式预报数据和空气质量实况数据，为用户提供未来5天的逐小时空气质量预报。</span></p><ul><li><span>调研空气污染扩散条件，构建算法特征，基于SVR构建回归模型预报空气质量数据。</span></li><li><span>针对站点数据缺失问题，基于GBDT构建回归模型，补充站点数据。</span></li></ul><hr /><p><strong><span>用户反馈</span></strong><span> 参与</span>
+<span>一种重要的 UGC 内容，在方方面面参与到目前气象数据加工和预报环节当中。最初它基于一定的时空范围内的用户反馈数据，通过 贝叶斯推断 的方式为短时提供实时有效高质量的反馈数据。在19年，添加了用户置信度的分级系统，对不同置信度用户按照不同策略进行采纳。它使得用户反馈的采纳率和可靠性都大幅提高。</span></p><h3 id='自我描述'><span>自我描述</span></h3><p><span>能够使用python/c++解决各种业务化问题，能够使用kafka、</span><a href='https://github.com/chencodeX/XianYun'><span>flask</span></a><span>、rpc等技术构建高效稳定的线上服务。</span>
+<span>熟悉linux系统的使用，熟悉pytorch,libtorch深度学习框架，有caffe和tensorflow的使用经验。</span>
+<span>了解分类回归等机器学习基本理论，熟悉数据清洗特征工程，有sklearn使用经验。</span>
+<span>了解常用的数字图像处理技术，熟练使用opencv、numpy、pandas等数据处理工具。</span>
+<span>熟悉一些常用的CNN、RNN算法模型，了解图像的识别、检测、语义分割等相关算法。</span>
+<span>喜欢有挑战的编程工作，对新技术抱有好奇心，动手能力强。</span>
+<span>优秀的策略游戏玩家，反曲弓入门爱好者。</span>
+<span>GitHub: </span><a href='https://github.com/chencodeX' target='_blank' class='url'>https://github.com/chencodeX</a></p></div></div>
 </body>
 </html>
